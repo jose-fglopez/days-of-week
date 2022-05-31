@@ -1,0 +1,5 @@
+<div class="h_container" *ngIf="data?.length">
+    <div *ngFor="let element of data" class="h_element" [ngClass]="{'active' : element.highlight}">
+        <span>{{element.content}}</span>
+    </div>
+</div>
